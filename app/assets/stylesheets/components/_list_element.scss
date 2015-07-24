@@ -23,6 +23,7 @@
   font-weight: bold;
 
   &:hover {
+    color: rgb(255, 207, 0);
     svg {
       polygon:first-child {
         fill: rgb(255, 207, 0);

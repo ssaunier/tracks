@@ -4,10 +4,10 @@ var List = React.createClass({
       <div>
         <div className='list-date'>
           <span className='list-date-big'>
-            TODAY
+            {this.props.date.day}
           </span>
           <span className='list-date-meta'>
-            15th July
+            {this.props.date.meta}
           </span>
         </div>
         {this.props.elements.map(function(element){

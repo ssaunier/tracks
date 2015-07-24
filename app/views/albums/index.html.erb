@@ -1,6 +1,7 @@
 <div class="container">
-  <% @lists.each do |list| %>
+  <% @lists.each_with_index do |list, index| %>
     <%= react_component 'List', {
+      date: get_date(index),
       elements: list.albums.order(cached_votes_up: :desc).map do |album|
         {
           album: album,
