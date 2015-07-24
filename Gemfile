@@ -9,9 +9,12 @@ gem "simple_form"
 gem "country_select"
 gem "high_voltage"
 gem "devise"
-gem "pundit"
 gem "paperclip"
 gem "aws-sdk", "< 2.0"
+
+gem 'react-rails', '~> 1.0'
+
+gem 'acts_as_votable'
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"

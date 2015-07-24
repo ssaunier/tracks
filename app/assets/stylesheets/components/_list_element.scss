@@ -1,0 +1,72 @@
+.element {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    .element-upvote {
+      transform: scale(1.2);
+    }
+  }
+
+  a {
+    color: black;
+  }
+}
+
+.element-upvote {
+  float: left;
+  margin-right: 10px;
+  transition: 0.3s ease transform;
+  font-weight: bold;
+
+  &:hover {
+    svg {
+      polygon:first-child {
+        fill: rgb(255, 207, 0);
+      }
+
+      polygon:last-child {
+        fill: rgba(255, 207, 0, 0.5);
+      }
+    }
+  }
+
+  .element-upvote-count {
+    text-align: center;
+  }
+}
+
+.element-thumbnail {
+  float: left;
+  height: 110px;
+  width: 110px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.element-info {
+  float: left;
+
+  .element-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .element-description {
+    color: #C3C3C3;
+    font-size: 18px;
+  }
+}
+
+.element-meta {
+  margin-left: auto;
+
+  img {
+    width: 35px;
+    border-radius: 50%;
+  }
+}
