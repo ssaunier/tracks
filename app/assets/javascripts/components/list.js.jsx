@@ -4,7 +4,7 @@ var List = React.createClass({
       <div>
         <div className='list-date'>
           <span className='list-date-big'>
-            {this.props.date.day}
+            {this.props.date ? this.props.date.day : ""}
           </span>
           <span className='list-date-meta'>
             {this.props.date.meta}

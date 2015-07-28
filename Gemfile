@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+source 'https://rails-assets.org'
 
 ruby "2.2.0"
 
@@ -11,6 +12,7 @@ gem "high_voltage"
 gem "devise"
 gem "paperclip"
 gem "aws-sdk", "< 2.0"
+gem "jbuilder"
 
 gem 'react-rails', '~> 1.0'
 
@@ -25,6 +27,8 @@ gem "font-awesome-sass"
 gem "rails-i18n"
 gem "devise-i18n"
 gem "devise-i18n-views"
+
+gem 'rails-assets-pubsub-js'
 
 group :development, :test do
   gem "spring"

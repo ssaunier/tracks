@@ -1,0 +1,18 @@
+<div class="container">
+  <%= react_component 'List', {
+    date: false,
+
+    elements: @albums.order(cached_votes_up: :desc).map do |album|
+      {
+        album: album,
+        user: album.user,
+        upvote: album.cached_votes_up,
+        upvoted: user_signed_in? ? current_user.voted_for?(album) : false,
+        unvotePath: unvote_album_path(album),
+        upvotePath: upvote_album_path(album)
+      }
+    end
+    }, {
+      class: "list"
+    } %>
+</div>

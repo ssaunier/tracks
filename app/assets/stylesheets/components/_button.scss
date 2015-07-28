@@ -1,9 +1,19 @@
-/* -------------------------------------
- * Your CSS code for buttons
-  * ------------------------------------- */
+.button {
 
+}
 
-/* -------------------------------------
- * [TIPS] Look for cool button design on CodePen
- * ex: http://codepen.io/search?q=buttons
- * ------------------------------------- */
+.button-hero {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.51);
+  background-color: rgba(255, 255, 255, 0.11);
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+  }
+}

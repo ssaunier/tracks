@@ -32,5 +32,6 @@ YAML.load_file(albums_file).map do |q|
   album.user_id = q['user_id']
   album.list_id = q['list_id']
   album.tagline = q['tagline']
+  album.featured = q['featured']
   album.save
 end
