@@ -15,4 +15,4 @@ class AlbumStoreClass {
   }
 }
 
-var AlbumStore = alt.createStore(PostStoreClass, 'AlbumStore');
+var AlbumStore = alt.createStore(AlbumStoreClass, 'AlbumStore');
