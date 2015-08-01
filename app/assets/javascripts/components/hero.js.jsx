@@ -26,6 +26,9 @@ var Hero = React.createClass({
           <div className='hero-title'>
             {element.title}
           </div>
+          <div className='hero-artist'>
+            {element.artist ? element.artist.name : ''}
+          </div>
           <div className='hero-action'>
             <a href={votePath} data-remote='true' onClick={this.handleVote}>
               <div className={upvoteClasses}>

@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   get 'upcoming', to: 'albums#upcoming', as: :upcoming
   resources :albums do
     member do
-      get 'upvote', to: 'albums#upvote'
-      get 'unvote', to: 'albums#unvote'
-      get 'get', to: 'albums#get_album'
+      post :upvote
     end
   end
 end

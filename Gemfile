@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-source 'https://rails-assets.org'
 
 ruby "2.2.0"
 
@@ -17,6 +16,7 @@ gem "jbuilder"
 gem 'react-rails', '~> 1.0'
 
 gem 'acts_as_votable'
+gem "lodash-rails"
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
@@ -28,7 +28,14 @@ gem "rails-i18n"
 gem "devise-i18n"
 gem "devise-i18n-views"
 
-gem 'rails-assets-pubsub-js'
+gem "js-routes"
+
+source 'https://rails-assets.org' do
+  gem "rails-assets-alt"
+  gem "rails-assets-classnames"
+  gem 'rails-assets-mdi' # material design icons
+end
+
 
 group :development, :test do
   gem "spring"

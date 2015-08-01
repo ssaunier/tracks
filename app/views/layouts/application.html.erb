@@ -14,11 +14,6 @@
   <%= render "shared/flashes" %>
 
   <%= yield %>
-  <div class="hero-wrapper">
-    <div class='hero-container'>
-      <%= react_component 'Hero', {}, {class: 'hero'} %>
-    </div>
-  </div>
 
   <%= javascript_include_tag :application %>
   <%= yield(:after_js) %>

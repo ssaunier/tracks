@@ -8,6 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.react.addons = true
+  config.react.variant = :development
 
   config.eager_load = false
 

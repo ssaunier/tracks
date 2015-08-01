@@ -3,13 +3,11 @@ class AlbumsController < ApplicationController
   respond_to :json, only: [:get_album]
 
   def upvote
-    @album.liked_by current_user
-    render nothing: true
-  end
-
-  def unvote
-    @album.unliked_by current_user
-    render nothing: true
+    if current_user.voted_for? @album
+      @album.unliked_by current_user
+    else
+      @album.liked_by current_user
+    end
   end
 
   def upcoming

@@ -4,17 +4,14 @@ var List = React.createClass({
       <div>
         <div className='list-date'>
           <span className='list-date-big'>
-            {this.props.date ? this.props.date.day : ""}
           </span>
           <span className='list-date-meta'>
-            {this.props.date.meta}
           </span>
+
+          {this.props.albums.map(function(p){
+            return <AlbumItem key={p.id} {...p} />
+          })}
         </div>
-        {this.props.elements.map(function(element){
-          return(
-            <ListElement element={element} />
-          )
-        })}
       </div>
     )
   }

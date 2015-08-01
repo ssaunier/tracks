@@ -1,69 +1,77 @@
 - title: 'Superscope'
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
   user_id: 1
+  artist_id: 1
   list_id: 2
   featured: true
 
 - title: 'Bella Avgvsta'
-  tagline: 'I like it, fucckkk yeah ! Dores ololo props'
   list_id: 1
+  artist_id: 2
   user_id: 2
+
 - title: 'Phylyps Trak II'
   featured: true
   list_id: 2
-  tagline: 'Listen that shit guys, :)'
   user_id: 3
+  artist_id: 3
+
 - title: 'Different Strokes'
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
   user_id: 4
+  artist_id: 4
   featured: true
   list_id: 2
+
 - title: 'Klockworks 14'
-  tagline: 'I like it, fucckkk yeah ! Dores ololo props'
   user_id: 5
+  artist_id: 5
   featured: true
   list_id: 2
 
 - title: 'Clark'
-  tagline: 'Listen that shit guys, :)'
   user_id: 6
+  artist_id: 1
   featured: true
   list_id: 2
 
 - title: 'Octagon'
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
   user_id: 7
+  artist_id: 3
   featured: true
   list_id: 2
+
 
 - title: 'Superscope'
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
   user_id: 1
+  artist_id: 1
   featured: true
   list_id: 1
+
 - title: 'Bella Avgvsta'
   featured: false
-  tagline: 'I like it, fucckkk yeah ! Dores ololo props'
   user_id: 2
+  artist_id: 2
+
 - title: 'Phylyps Trak II'
   featured: false
-  tagline: 'Listen that shit guys, :)'
   user_id: 3
+  artist_id: 3
+
 - title: 'Different Strokes'
   featured: false
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
   user_id: 4
+  artist_id: 4
+
 - title: 'Klockworks 14'
   featured: false
-  tagline: 'I like it, fucckkk yeah ! Dores ololo props'
   user_id: 5
+  artist_id:
 
 - title: 'Clark'
   featured: false
-  tagline: 'Listen that shit guys, :)'
   user_id: 6
+  artist_id: 1
 
 - title: 'Octagon'
   featured: false
-  tagline: 'Awesome mate ! Lorem ipsum lalala ouhouhouh'
-  user_id: 7
+  user_id: 6
+  artist_id: 3
